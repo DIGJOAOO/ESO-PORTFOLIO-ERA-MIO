@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+
+footer {
+    margin-top: auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.primerRectangulo {
+  background-color: chartreuse;
+}
+
+.segundoRectangulo {
+  background-color: blueviolet;
+}
+.contenedor{
+  background-color: aqua;
+}
