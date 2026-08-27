@@ -1,36 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+html,
 body {
     margin: 0;
+    padding: 0;
+    width: 100%;
     min-height: 100vh;
+}
+body {
+    background: linear-gradient(135deg, #020b16, #06213b, #031222);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+.barra {
+    width: 100%;
+    padding: 15px 40px;
+    background-color: rgba(0, 10, 22, 0.9);
+    border-bottom: 2px solid white;
+}
+.navbar-brand {
+    font-size: 24px;
+    color: white !important;
+    letter-spacing: 2px;
+}
+.nav-link {
+    color: white !important;
+    font-size: 18px;
+    margin-left: 30px;
+    transition: 0.2s;
+}
+.nav-link:hover {
+    color: #a8cfff !important;
+}
+.primerRectangulo {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    position: relative;
+    border-bottom: 2px solid white;
+    background: linear-gradient(120deg, #03101f, #0a3155);
+}
+.texto {
+    width: 55%;
+    padding: 100px 60px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
-
-
-h1 {
-  color: white;
-  text-align: center;
-}
-
-p {
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  font-size: 20px;
-}
-
-footer {
-    margin-top: auto;
-    background-color: black;
+.texto h1 {
+    font-size: 55px;
+    margin-bottom: 30px;
     color: white;
-    text-align: center;
-    padding: 20px;
+    font-weight: bold;
 }
-
-.primerRectangulo {
-  background-color: chartreuse;
+.texto p {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 22px;
+    color: #dce9f5;
+    margin-bottom: 15px;
 }
-
+.parteDerecha {
+    width: 45%;
+    padding: 20px 40px 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logoHuergo {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.logoHuergo img {
+    max-width: 150px;
+    max-height: 80px;
+    object-fit: contain;
+}
+.carousel {
+    width: 100%;
+    border: 2px solid white;
+    overflow: hidden;
+}
+.carousel-inner {
+    width: 100%;
+}
+.carousel-item {
+    width: 100%;
+}
+.carousel-item img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    display: block;
+}
 .segundoRectangulo {
-  background-color: blueviolet;
+    width: 100%;
+    min-height: 400px;
+    padding: 60px;
+    background: linear-gradient(120deg, #061a2e, #0b365c);
+    border-bottom: 2px solid white;
 }
-.contenedor{
-  background-color: aqua;
+.contenido {
+    max-width: 1000px;
+    margin: auto;
+}
+.contenido h2 {
+    color: white;
+    font-size: 42px;
+    margin-bottom: 25px;
+}
+.contenido p {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 20px;
+    color: #dce9f5;
+}
+footer {
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+    background-color: #010812;
+    color: white;
+}
+footer p {
+    margin: 5px 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+@media (max-width: 768px) {
+    .barra {
+        padding: 15px 20px;
+    }
+    .navbar-nav {
+        margin-top: 10px;
+    }
+    .nav-link {
+        margin-left: 0;
+    }
+    .primerRectangulo {
+        flex-direction: column;
+    }
+    .texto {
+        width: 100%;
+        padding: 60px 30px;
+    }
+    .texto h1 {
+        font-size: 40px;
+    }
+    .parteDerecha {
+        width: 100%;
+        padding: 20px;
+    }
+    .logoHuergo {
+        justify-content: center;
+    }
+    .carousel-item img {
+        height: 280px;
+    }
+    .segundoRectangulo {
+        padding: 40px 25px;
+    }
 }
